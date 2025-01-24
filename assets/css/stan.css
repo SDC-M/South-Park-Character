@@ -1,0 +1,411 @@
+:root{
+    --red-color: #c1042e;
+    --skin-color: #f2d5ad;
+    --blue-color: #486199;
+    --brown-color: #8f5642;
+}
+
+#stan *
+{
+    position: absolute;
+    box-sizing:content-box;
+    -moz-box-sizing:content-box;
+}
+
+#stan{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    position: relative;
+    background-color: var(--skin-color);
+    height: 250px;
+    width: 250px;
+    margin-top: 25rem;
+    border-radius: 120px;
+}
+
+.cap{
+    margin-top: 220px;
+    width: 250px;
+    height: 130px; 
+    background-color: var(--blue-color); 
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px; 
+}
+
+.cap_band{
+    background-color: var(--red-color);
+    margin-top: 350px;
+    width: 270px;
+    height: 15px;
+    background-color: var(--red-color);
+    border-radius: 15px 15px;
+
+}
+
+.cap_band::after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 20px;
+    background-color: var(--red-color);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.star{
+    background-color: var(--red-color);
+    margin-top: 82px;
+    width: 7px;
+    height: 55px;
+    background-color: var(--red-color);
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+#b{
+    transform: rotate(-45deg);
+}
+#c{
+    transform: rotate(-90deg);
+}
+#d{
+    transform: rotate(-135deg);
+}
+
+.eye{
+    position: absolute;
+    margin-top: 120px;
+    width: 70px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#first_eye{
+    left: 22px;
+    transform: rotate(-45deg);
+    margin-left: 35px;
+}
+
+
+
+#second_eye{
+    transform: rotate(45deg);
+    left: 120px;
+}
+
+.iris{
+    position: absolute;
+    background-color: black;
+    width: 9px;
+    height: 9px;
+    margin-top: 140px;
+    border-radius: 100%;
+    justify-items:center;
+}
+
+
+#first_iris{
+    left: 96px;
+}
+
+#second_iris{
+    left: 140px;
+}
+
+.mouth{
+    position: absolute;
+    background-color: black;
+    height: 30px;
+    width: 35px;
+    margin-top: 197px;
+    border-radius: 50%;
+    transform: rotate(-40%);
+    left: 109px;
+}
+
+
+#bad_smile{
+    position: absolute;
+    background-color: var(--skin-color);
+    height: 35px;
+    width: 50px;
+    margin-top: 203px;
+    border-radius: 90%;
+    transform: rotate(-40%);
+    left: 105px;
+}
+
+.body{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    background-color: var(--blue-color);
+    margin-top: 800px;
+}
+
+.arm_space{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin-top: 650px;
+}
+
+.right_arm{
+    position: absolute;
+    width: 50px;
+    height: 140px;
+    background-color: var(--brown-color);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    left: 61px;
+    top: 50px;
+    z-index: -1;
+    transform: rotate(15deg);
+}
+
+.left_arm{
+    position: absolute;
+    width: 50px;
+    height: 140px;
+    background-color: var(--brown-color);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    left: 290px;
+    top: 50px;
+    z-index: -4;
+    transform: rotate(-15deg);
+}
+
+.hand{
+    position: absolute;
+    background-color: var(--red-color);
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    left: 55px;
+    top: 160px;
+    border-radius: 50%;
+}
+
+#left_hand{
+    left: 305px;
+}
+
+.thumb{
+    position: absolute;
+    background-color: #aa0428;
+    width: 25px;
+    height: 25px;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#right_thumb{
+    left: 80px;
+    top: 160px;
+}
+
+#left_thumb{
+    left: 300px;
+    top: 160px;
+}
+
+.jacket{
+    position: relative;
+    width: 230px;
+    height: 120px;
+    background-color: var(--brown-color);
+    margin-top: 780px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.zip{
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    background-color: black;
+    left: 110px;
+    border-radius: 5px;
+}
+
+.button{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#first_button{
+    left: 90px;
+    top: 30px;
+}
+
+#second_button{
+    left: 90px;
+    top: 60px;
+}
+
+#third_button{
+    left: 90px;
+    top: 90px;
+}
+
+.collar_space{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    margin-top: 650px;
+}
+
+.collar{
+    position: absolute;
+    border-radius: 55%;
+}
+
+#first_collar{
+    border-top: 40px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 100px solid var(--red-color);
+    top: 39px;
+    left: 18px;
+    transform: rotate(9deg);
+}
+
+#second_collar{
+    border-top: 40px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 100px solid var(--red-color);
+    top: 39px;
+    left: 135px;
+    transform: rotate(-9deg);
+}
+
+.collar_hole{
+    background-color: var(--red-color);
+    height: 20px;
+    width: 80px;
+    left: 160px;
+    top: 90px;
+    border-radius: 60%;
+}
+
+.space_arm{
+    background-color: black;
+    height: 70px;
+    width: 3px;
+    border-radius: 50%;
+    top: 120px;
+    z-index: 3;
+}
+
+#left_space_arm{
+    transform: rotate(5deg);
+    left: 93px;
+}
+
+#right_space_arm{
+    transform: rotate(-5deg);
+    left: 303px;
+}
+
+.foot{
+    position: absolute;
+    margin-top: 135px;
+    width: 70%;
+    height: 18px; 
+    background-color: rgb(46, 45, 45); 
+    border-radius: 50% 50% 50% 50% / 100% 100% 0% 0% ;
+}
+
+#first_foot{
+    position: absolute;
+    left: 80px;
+}
+
+#second_foot{
+    position: absolute;
+    right: 80px;
+}
+
+/* ====== AROUND ======*/
+
+
+@media screen and (min-width: 600px){
+    .aroud_space{
+        position: relative;
+        width: 600px;
+        height: 473px;
+        background-color: rgba(0, 0, 0, 0.479);
+        margin-top: 483px;
+        z-index: -10;
+    }
+    .snow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 600px;
+        height: 2000px;
+        animation: dropFlowParticles 5s linear infinite ;
+        background: url(/assets/img/particules_medium.png);
+    }
+    @keyframes dropFlowParticles {
+        0%{
+            transform: translateY(-200px);
+        }
+    }
+    .lampadaire {
+        position: relative;
+        width: 0;
+        height: 0;
+      }
+      
+      .mât {
+        width: 20px;
+        height: 200px;
+        background-color: #413e3e;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .ampoule {
+        width: 40px;
+        height: 40px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .base {
+        width: 60px;
+        height: 10px;
+        background-color: #333;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #lamp1{
+        margin-top: 273px;
+        left: 50px;
+      }
+
+      #lamp2{
+        margin-top: 273px;
+        left: 550px;
+      }
+}
